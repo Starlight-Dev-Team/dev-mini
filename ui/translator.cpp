@@ -1,5 +1,4 @@
-#ifndef UI_TRANLATOR_CPP
-#define UI_TRANLATOR_CPP
+
 
 
 #include "translator.hpp"
@@ -15,6 +14,3 @@ Translator::Translator(QApplication& qtApp) {
 
 
 }
-
-
-#endif
