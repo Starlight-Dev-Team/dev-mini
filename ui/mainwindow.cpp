@@ -1,11 +1,8 @@
-#ifndef UI_MAINWINDOW_CPP
-#define UI_MAINWINDOW_CPP
-
-
 #include "mainwindow.hpp"
 
+namespace dm::ui
+{
 
-namespace dm::ui {
 
 MainWindow::MainWindow() {
   this->setWindowTitle(MainWindow::windowTitle);
@@ -68,6 +65,3 @@ void MainWindow::newMap() {}
 
 
 }
-
-
-#endif

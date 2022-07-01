@@ -3,7 +3,7 @@
 
 
 #include <QtCore/QString>
-#include "map.cpp"
+#include "map.hpp"
 
 
 namespace dm::mini {

@@ -7,13 +7,14 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QDialogButtonBox>
 
-#include "../mini/app.cpp"
+#include "../mini/app.hpp"
 
 
 namespace dm::ui {
 
 
 class SelectMapDialog : protected QDialog {
+    Q_OBJECT
  public:
   SelectMapDialog(const mini::App &defaultApp = mini::App());
  public slots:

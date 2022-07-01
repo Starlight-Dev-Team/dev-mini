@@ -1,5 +1,3 @@
-#ifndef UI_WORKSPACE_CPP
-#define UI_WORKSPACE_CPP
 
 
 #include "workspace.hpp"
@@ -25,5 +23,3 @@ inline void Workspace::closeDocument(WorkspaceDocument *document) {}
 
 }
 
-
-#endif

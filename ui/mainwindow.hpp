@@ -12,11 +12,13 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMessageBox>
 #include <QtGui/QIcon>
-#include <QtGui/QAction>
+#include <QAction>
+#include <QDebug>
+//#include <QtGui/QAction>
 #include <QtGui/QCloseEvent>
 
-#include "icon.cpp"
-#include "dialog.cpp"
+#include "icon.hpp"
+#include "dialog.hpp"
 
 
 namespace dm::ui{

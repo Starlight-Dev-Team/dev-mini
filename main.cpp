@@ -1,11 +1,11 @@
 #include <QApplication>
 
-#include "mini/app.cpp"
-#include "mini/map.cpp"
-#include "ui/mainwindow.cpp"
-#include "ui/translator.cpp"
-#include "ui/workspace.cpp"
-#include "ui/dialog.cpp"
+#include "mini/app.hpp"
+#include "mini/map.hpp"
+#include "ui/mainwindow.hpp"
+#include "ui/translator.hpp"
+#include "ui/workspace.hpp"
+#include "ui/dialog.hpp"
 
 int main(int argc, char *argv[]) {
   // Qt.
@@ -14,12 +14,12 @@ int main(int argc, char *argv[]) {
   gui.setApplicationVersion("0.1.0");
   gui.setOrganizationName("Starlight Dev Team");
   gui.setOrganizationDomain("https://dev.starlight.work/"); // Future domain.
-  // Dev-Mini.
-  dm::ui::Translator translator(gui);
+//  // Dev-Mini.
+//  dm::ui::Translator translator(gui);
   dm::ui::MainWindow mainWindow;
   mainWindow.show();
-  /* dm::ui::SelectMapDialog dialog; // Test
-     dialog.show();*/
-  // Exec.
+//  /* dm::ui::SelectMapDialog dialog; // Test
+//     dialog.show();*/
+//  // Exec.
   return gui.exec();
 }
