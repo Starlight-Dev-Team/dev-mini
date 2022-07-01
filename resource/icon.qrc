@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file alias="openFolder">icon/openFolder.svg</file>
+        <file alias="plus">icon/plus.svg</file>
+        <file alias="question">icon/question.svg</file>
+    </qresource>
+</RCC>
