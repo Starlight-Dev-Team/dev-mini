@@ -14,7 +14,7 @@ namespace dm::ui {
 
 
 class SelectMapDialog : protected QDialog {
-    Q_OBJECT
+ Q_OBJECT
  public:
   SelectMapDialog(const mini::App &defaultApp = mini::App());
  public slots:
