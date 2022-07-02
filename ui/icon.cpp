@@ -1,14 +1,5 @@
-#include <QtGui/QIcon>
+#include "icon.h"
 
-#include "icon.hpp"
-
-
-namespace dm::ui {
-
-
-QIcon Icon::openFolder = QIcon(":/icon/openFolder");
-QIcon Icon::plus = QIcon(":/icon/plus");
-QIcon Icon::question = QIcon(":/icon/question");
-
-
-}
+QIcon Icon::openFolder = QIcon(":/icon/openFolder.svg");
+QIcon Icon::plus = QIcon(":/icon/plus.svg");
+QIcon Icon::question = QIcon(":/icon/question.svg");

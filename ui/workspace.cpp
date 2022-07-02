@@ -1,25 +1,28 @@
+#include "workspace.h"
 
-
-#include "workspace.hpp"
-
-
-namespace dm::ui {
-
-
-Workspace::Workspace() {
+WorkSpace::WorkSpace()
+{
   this->setTabsClosable(true);
   this->setTabsMovable(true);
   this->setViewMode(QMdiArea::TabbedView);
 }
 
-/*inline QList<WorkspaceDocument*> Workspace::getDocumentList() {
+/*inline QList<WorkSpaceDocument*> WorkSpace::getDocumentList()
+  {
   return this->subWindowList();
 }*/
-inline void Workspace::addDocument(WorkspaceDocument *document) {
+inline void WorkSpace::addDocument(WorkSpaceDucument *document)
+{
   this->documentList.push_back(document);
 }
-inline void Workspace::showDocument(WorkspaceDocument *document) {}
-inline void Workspace::closeDocument(WorkspaceDocument *document) {}
 
+
+inline void WorkSpace::showDocument(WorkSpaceDucument *document)
+{
+    // todo
+}
+inline void WorkSpace::closeDocument(WorkSpaceDucument *document)
+{
+    // todo
 }
 
