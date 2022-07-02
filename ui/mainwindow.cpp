@@ -1,7 +1,6 @@
 #include "mainwindow.hpp"
 
-namespace dm::ui
-{
+namespace dm::ui {
 
 
 MainWindow::MainWindow() {
