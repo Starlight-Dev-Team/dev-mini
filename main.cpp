@@ -1,16 +1,16 @@
-#include "ui/mainwindow.h"
+#include "ui/mainwindow.hpp"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    a.setApplicationName("Dev-Mini");
-    a.setApplicationVersion("0.1.0");
-    a.setOrganizationName("Starlight Dev Team");
-    a.setOrganizationDomain("https://dev.starlight.work/"); // Future domain.
+    QApplication gui(argc, argv);
+    gui.setApplicationName("Dev-Mini");
+    gui.setApplicationVersion("0.1.0");
+    gui.setOrganizationName("Starlight Dev Team");
+    gui.setOrganizationDomain("https://dev.starlight.work/"); // Future domain.
 
-    MainWindow w;
+    dm::ui::MainWindow w;
     w.show();
-    return a.exec();
+    return gui.exec();
 }

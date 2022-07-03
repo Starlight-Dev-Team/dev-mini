@@ -1,9 +1,12 @@
-#ifndef WORKSPACE_H
-#define WORKSPACE_H
+#ifndef WORKSPACE_HPP
+#define WORKSPACE_HPP
 
 #include <QList>
 #include <QMdiArea>
 #include <QMdiSubWindow>
+
+namespace dm::ui
+{
 
 class WorkSpaceDucument
 {
@@ -24,4 +27,8 @@ private:
     QList<WorkSpaceDucument*> documentList;
 };
 
-#endif // WORKSPACE_H
+} // NAMESPACE dm::ui
+
+
+
+#endif // WORKSPACE_HPP
