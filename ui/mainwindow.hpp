@@ -1,9 +1,9 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef MAINWINDOW_HPP
+#define MAINWINDOW_HPP
 
-#include "../ui/icon.h"
-#include "../mini/app.h"
-#include "dialog.h"
+#include "../ui/icon.hpp"
+#include "../mini/app.hpp"
+#include "dialog.hpp"
 
 #include <QMainWindow>
 #include <QList>
@@ -14,6 +14,9 @@
 #include <QDebug>
 #include <QToolBar>
 #include <QCloseEvent>
+
+namespace dm::ui
+{
 
 
 class MainWindow : public QMainWindow
@@ -40,6 +43,10 @@ private:
    QAction* openMapActionWidget;
    QAction* newMapActionWidget;
    QAction* aboutDmActionWidget;
-   QList<App> appList;
+   QList<dm::mini::App> appList;
 };
-#endif // MAINWINDOW_H
+
+} // NAMESPACE dm::ui
+
+
+#endif // MAINWINDOW_HPP

@@ -26,13 +26,13 @@ SOURCES += \
     ui/workspace.cpp
 
 HEADERS += \
-    mini/app.h \
-    ui/dialog.h \
-    ui/icon.h \
-    ui/mainwindow.h \
-    mini/map.h \
-    ui/translator.h \
-    ui/workspace.h
+    mini/app.hpp \
+    mini/map.hpp \
+    ui/dialog.hpp \
+    ui/icon.hpp \
+    ui/mainwindow.hpp \
+    ui/translator.hpp \
+    ui/workspace.hpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

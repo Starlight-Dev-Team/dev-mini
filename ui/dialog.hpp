@@ -1,18 +1,22 @@
-#ifndef DIALOG_H
-#define DIALOG_H
+#ifndef DIALOG_HPP
+#define DIALOG_HPP
 
-#include "../mini/map.h"
-#include "../mini/app.h"
+#include "../mini/map.hpp"
+#include "../mini/app.hpp"
 
 #include <QMessageBox>
 #include <QTabWidget>
 #include <QDialogButtonBox>
 #include <QDialog>
 
-class SelectMapDialog : protected QDialog {
+namespace dm::ui
+{
+
+class SelectMapDialog : protected QDialog
+{
 
 public:
-    SelectMapDialog(const App &defaultApp = App());
+    SelectMapDialog(const dm::mini::App &defaultApp = dm::mini::App());
     inline void show();
 protected:
     QTabWidget* appTab = new QTabWidget(this);
@@ -21,7 +25,8 @@ protected:
 };
 
 
-class AskSaveFileDialog : public QMessageBox {
+class AskSaveFileDialog : public QMessageBox
+{
 public:
     AskSaveFileDialog(QString content = tr("Save changes?"),
                       StandardButtons buttons = StandardButtons(
@@ -29,5 +34,9 @@ public:
                 | QMessageBox::Cancel));
 };
 
+} // NAMESPACE dm::ui
 
-#endif // DIALOG_H
+
+
+
+#endif // DIALOG_HPP

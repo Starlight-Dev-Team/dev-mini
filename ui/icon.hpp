@@ -1,7 +1,10 @@
-#ifndef ICON_H
-#define ICON_H
+#ifndef ICON_HPP
+#define ICON_HPP
 
 #include <QIcon>
+
+namespace dm::ui
+{
 
 class Icon
 {
@@ -11,4 +14,8 @@ public:
     static QIcon question;
 };
 
-#endif // ICON_H
+
+} // NAMESPACE dm::ui
+
+
+#endif // ICON_HPP

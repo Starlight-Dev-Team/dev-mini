@@ -1,4 +1,8 @@
-#include "mainwindow.h"
+#include "mainwindow.hpp"
+
+namespace dm::ui
+{
+
 
 QString MainWindow::windowTitle = tr("Dev-Mini");
 QSize MainWindow::windowSize = QSize(1060, 630);
@@ -50,25 +54,22 @@ void MainWindow::closeEvent(QCloseEvent *event)
     // Displays a modal box, asking whether to save the documents in the workspace.
     AskSaveFileDialog closingBox(tr("Save changes to runspace in the workspace?"));
     int closingChoice = closingBox.exec();
-    switch (closingChoice) {
-      case QMessageBox::SaveAll: {
+    switch (closingChoice)
+    {
+    case QMessageBox::SaveAll:
         // Save documents, and then exit.
         break;
-      }
-      case QMessageBox::Discard: {
+    case QMessageBox::Discard:
         // Exit.
         break;
-      }
-      case QMessageBox::Cancel: {
+    case QMessageBox::Cancel:
         // Cancel exit.
         event->ignore();
         break;
-      }
-      default: {
+    default:
         // What happened?
         qWarning() << "No closing option " << closingChoice << ".";
         break;
-      }
     }
 }
 
@@ -83,3 +84,7 @@ void MainWindow::openMap()
 {
 
 }
+
+
+} // NAMESPACE dm::ui
+

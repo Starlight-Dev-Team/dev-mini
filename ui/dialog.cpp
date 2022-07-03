@@ -1,15 +1,22 @@
-#include "dialog.h"
+#include "dialog.hpp"
 
-SelectMapDialog::SelectMapDialog(const App &defaultApp) {
+namespace dm::ui
+{
+
+
+SelectMapDialog::SelectMapDialog(const dm::mini::App &defaultApp)
+{
   this->setModal(true);
 }
 
-inline void SelectMapDialog::show() {
+inline void SelectMapDialog::show()
+{
   this->QDialog::show();
 }
 
 
-AskSaveFileDialog::AskSaveFileDialog(QString content, StandardButtons buttons){
+AskSaveFileDialog::AskSaveFileDialog(QString content, StandardButtons buttons)
+{
   this->setIcon(QMessageBox::Question);
   this->setWindowTitle(tr("Save Files"));
   this->setText(content);
@@ -18,3 +25,4 @@ AskSaveFileDialog::AskSaveFileDialog(QString content, StandardButtons buttons){
 }
 
 
+} // NAMESAPCE dm::ui

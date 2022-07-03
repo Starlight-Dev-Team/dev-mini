@@ -1,4 +1,8 @@
-#include "workspace.h"
+#include "workspace.hpp"
+
+namespace dm::ui
+{
+
 
 WorkSpace::WorkSpace()
 {
@@ -26,3 +30,6 @@ inline void WorkSpace::closeDocument(WorkSpaceDucument *document)
     // todo
 }
 
+
+
+} // NAMESPACE dm::ui

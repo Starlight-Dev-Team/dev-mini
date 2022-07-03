@@ -1,7 +1,10 @@
-#ifndef APP_H
-#define APP_H
+#ifndef APP_HPP
+#define APP_HPP
 
-#include "map.h"
+#include "map.hpp"
+
+namespace dm::mini
+{
 
 class App
 {
@@ -9,4 +12,8 @@ public:
     App();
 };
 
-#endif // APP_H
+
+} // NAMESPACE dm::mini
+
+
+#endif // APP_HPP

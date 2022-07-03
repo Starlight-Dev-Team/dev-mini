@@ -1,4 +1,7 @@
-#include "map.h"
+#include "map.hpp"
+
+namespace dm::mini
+{
 
 MapId::MapId(const QString &localId)
 {
@@ -28,3 +31,6 @@ Map::~Map()
 {
     // todo
 }
+
+} // NAMESPACE dm::mini
+

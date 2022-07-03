@@ -1,7 +1,10 @@
-#ifndef MAP_H
-#define MAP_H
+#ifndef MAP_HPP
+#define MAP_HPP
 
 #include <QString>
+
+namespace dm::mini
+{
 
 class MapId
 {
@@ -23,5 +26,7 @@ private:
     MapId id;
 };
 
+} // NAMESPACE dm::mini
 
-#endif // MAP_H
+
+#endif // MAP_HPP
