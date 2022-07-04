@@ -1,5 +1,5 @@
-#ifndef ICON_HPP
-#define ICON_HPP
+#ifndef UI_ICON_HPP
+#define UI_ICON_HPP
 
 #include <QIcon>
 
@@ -18,4 +18,4 @@ public:
 } // NAMESPACE dm::ui
 
 
-#endif // ICON_HPP
+#endif // UI_ICON_HPP

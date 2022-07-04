@@ -1,3 +1,7 @@
+#ifndef UI_WORKSPACE_CPP
+#define UI_WORKSPACE_CPP
+
+
 #include "workspace.hpp"
 
 namespace dm::ui
@@ -33,3 +37,6 @@ inline void WorkSpace::closeDocument(WorkSpaceDucument *document)
 
 
 } // NAMESPACE dm::ui
+
+
+#endif // UI_WORKSPACE_CPP

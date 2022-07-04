@@ -1,5 +1,5 @@
-#ifndef DIALOG_HPP
-#define DIALOG_HPP
+#ifndef UI_DIALOG_HPP
+#define UI_DIALOG_HPP
 
 #include "../mini/map.hpp"
 #include "../mini/app.hpp"
@@ -39,4 +39,4 @@ public:
 
 
 
-#endif // DIALOG_HPP
+#endif // UI_DIALOG_HPP

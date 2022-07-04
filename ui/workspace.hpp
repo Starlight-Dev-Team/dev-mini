@@ -1,5 +1,5 @@
-#ifndef WORKSPACE_HPP
-#define WORKSPACE_HPP
+#ifndef UI_WORKSPACE_HPP
+#define UI_WORKSPACE_HPP
 
 #include <QList>
 #include <QMdiArea>
@@ -31,4 +31,4 @@ private:
 
 
 
-#endif // WORKSPACE_HPP
+#endif // UI_WORKSPACE_HPP

@@ -1,5 +1,5 @@
-#ifndef TRANSLATOR_HPP
-#define TRANSLATOR_HPP
+#ifndef UI_TRANSLATOR_HPP
+#define UI_TRANSLATOR_HPP
 
 
 #include <QDebug>
@@ -19,4 +19,4 @@ public:
 
 } // NAMESPACE dm::ui
 
-#endif // TRANSLATOR_HPP
+#endif // UI_TRANSLATOR_HPP

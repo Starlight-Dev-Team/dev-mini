@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_HPP
-#define MAINWINDOW_HPP
+#ifndef UI_MAINWINDOW_HPP
+#define UI_MAINWINDOW_HPP
 
 #include "../ui/icon.hpp"
 #include "../mini/app.hpp"
@@ -49,4 +49,4 @@ private:
 } // NAMESPACE dm::ui
 
 
-#endif // MAINWINDOW_HPP
+#endif // UI_MAINWINDOW_HPP

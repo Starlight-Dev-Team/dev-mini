@@ -1,3 +1,7 @@
+#ifndef UI_MAINWINDOW_CPP
+#define UI_MAINWINDOW_CPP
+
+
 #include "mainwindow.hpp"
 
 namespace dm::ui
@@ -88,3 +92,5 @@ void MainWindow::openMap()
 
 } // NAMESPACE dm::ui
 
+
+#endif // UI_MAINWINDOW_CPP

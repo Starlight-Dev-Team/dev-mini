@@ -1,3 +1,7 @@
+#ifndef UI_DIALOG_CPP
+#define UI_DIALOG_CPP
+
+
 #include "dialog.hpp"
 
 namespace dm::ui
@@ -26,3 +30,6 @@ AskSaveFileDialog::AskSaveFileDialog(QString content, StandardButtons buttons)
 
 
 } // NAMESAPCE dm::ui
+
+
+#endif // UI_DIALOG_CPP

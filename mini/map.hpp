@@ -1,5 +1,5 @@
-#ifndef MAP_HPP
-#define MAP_HPP
+#ifndef MINI_MAP_HPP
+#define MINI_MAP_HPP
 
 #include <QString>
 
@@ -29,4 +29,4 @@ private:
 } // NAMESPACE dm::mini
 
 
-#endif // MAP_HPP
+#endif // MINI_MAP_HPP

@@ -1,3 +1,7 @@
+#ifndef MINI_MAP_CPP
+#define MINI_MAP_CPP
+
+
 #include "map.hpp"
 
 namespace dm::mini
@@ -34,3 +38,5 @@ Map::~Map()
 
 } // NAMESPACE dm::mini
 
+
+#endif // MINI_APP_CPP

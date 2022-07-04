@@ -1,3 +1,7 @@
+#ifndef UI_TRANLATOR_CPP
+#define UI_TRANLATOR_CPP
+
+
 #include "translator.hpp"
 
 namespace dm::ui
@@ -12,3 +16,5 @@ Translator::Translator(QApplication &qtApp)
 
 } // NAMESPACE dm::ui
 
+
+#endif // UI_TRANLATOR_CPP

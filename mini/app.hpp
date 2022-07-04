@@ -1,5 +1,5 @@
-#ifndef APP_HPP
-#define APP_HPP
+#ifndef MINI_App_HPP
+#define MINI_App_HPP
 
 #include "map.hpp"
 
@@ -16,4 +16,4 @@ public:
 } // NAMESPACE dm::mini
 
 
-#endif // APP_HPP
+#endif // MINI_App_HPP
