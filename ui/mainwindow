@@ -1,0 +1,6 @@
+#include "./mainwindow.hpp"
+
+#ifndef UI_MAINWINDOW
+#define UI_MAINWINDOW
+#include "./mainwindow.cpp"
+#endif

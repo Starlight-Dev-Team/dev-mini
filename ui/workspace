@@ -1,0 +1,6 @@
+#include "./workspace.hpp"
+
+#ifndef UI_WORKSPACE
+#define UI_WORKSPACE
+#include "./workspace.cpp"
+#endif

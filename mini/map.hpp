@@ -1,9 +1,12 @@
 #ifndef MINI_MAP_HPP
 #define MINI_MAP_HPP
 
+
 #include <QtCore/QString>
 
+
 namespace dm::mini {
+
 
 class MapId {
  public:

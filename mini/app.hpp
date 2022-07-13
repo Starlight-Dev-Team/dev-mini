@@ -3,7 +3,8 @@
 
 
 #include <QtCore/QString>
-#include "map.hpp"
+
+#include "./map"
 
 
 namespace dm::mini {
@@ -19,20 +20,6 @@ class App {
   int apiId;
   QString dataPath;
 };
-
-inline int App::getApiId() {
-  return this->apiId;
-}
-inline void App::setApiId(int apiId) {
-  this->apiId = apiId;
-}
-
-inline QString App::getDataPath() {
-  return this->dataPath;
-}
-inline void App::setDataPath(QString dataPath){
-  this->dataPath = dataPath;
-}
 
 
 }

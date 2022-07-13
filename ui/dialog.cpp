@@ -2,7 +2,7 @@
 #define UI_DIALOG_CPP
 
 
-#include "dialog.hpp"
+#include "./dialog.hpp"
 
 
 namespace dm::ui {
@@ -25,8 +25,8 @@ askSaveFileDialog::askSaveFileDialog(QString content, StandardButtons buttons){
   this->setDefaultButton(QMessageBox::SaveAll);
 }
 
-int askSaveFileDialog::exec() {
-  return this->QMessageBox::exec();
+void askSaveFileDialog::show() {
+  return this->open();
 }
 
 

@@ -1,7 +1,4 @@
-
-
-
-#include "translator.hpp"
+#include "./translator.hpp"
 
 
 namespace dm::ui {

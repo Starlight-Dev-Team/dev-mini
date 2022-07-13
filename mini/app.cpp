@@ -2,23 +2,25 @@
 #define MINI_APP_CPP
 
 
-#include "app.hpp"
+#include "./app.hpp"
 
 
 namespace dm::mini {
 
 
-inline QString MapId::getLocalId() {
-  return this->localId;
+inline int App::getApiId() {
+  return this->apiId;
 }
-void MapId::setLocalId(QString localId) {
-  this->localId = localId;
+inline void App::setApiId(int apiId) {
+  this->apiId = apiId;
 }
 
-Map::Map(MapId id) {
-  this->id = id;
+inline QString App::getDataPath() {
+  return this->dataPath;
 }
-Map::~Map() {}
+inline void App::setDataPath(QString dataPath){
+  this->dataPath = dataPath;
+}
 
 
 }

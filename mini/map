@@ -1,0 +1,6 @@
+#include "./map.hpp"
+
+#ifndef MINI_APP
+#define MINI_APP
+#include "./map.cpp"
+#endif

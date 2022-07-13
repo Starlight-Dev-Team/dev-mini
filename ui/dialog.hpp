@@ -2,12 +2,13 @@
 #define UI_DIALOG_HPP
 
 
+#include <QtCore/QString>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QDialogButtonBox>
 
-#include "../mini/app.hpp"
+#include "../mini/app"
 
 
 namespace dm::ui {
@@ -32,7 +33,7 @@ class askSaveFileDialog : protected QMessageBox {
                     StandardButtons buttons = StandardButtons(
                         QMessageBox::SaveAll | QMessageBox::Discard
                                              | QMessageBox::Cancel));
-  int exec();
+  void show();
 };
 
 

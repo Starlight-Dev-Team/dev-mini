@@ -1,0 +1,6 @@
+#include "./translator.hpp"
+
+#ifndef UI_TRANSLATOR
+#define UI_TRANSLATOR
+#include "./translator.cpp"
+#endif

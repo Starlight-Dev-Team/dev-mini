@@ -1,0 +1,6 @@
+#include "./icon.hpp"
+
+#ifndef UI_ICON
+#define UI_ICON
+#include "./icon.cpp"
+#endif

@@ -1,0 +1,6 @@
+#include "./app.hpp"
+
+#ifndef MINI_APP
+#define MINI_APP
+#include "./app.cpp"
+#endif

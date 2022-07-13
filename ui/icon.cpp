@@ -1,6 +1,4 @@
-#include <QtGui/QIcon>
-
-#include "icon.hpp"
+#include "ui/icon.hpp"
 
 
 namespace dm::ui {

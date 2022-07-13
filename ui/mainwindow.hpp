@@ -5,6 +5,7 @@
 #include <QtCore/QString>
 #include <QtCore/QSize>
 #include <QtCore/QObject>
+#include <QtCore/QDebug>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QToolBar>
@@ -12,13 +13,12 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMessageBox>
 #include <QtGui/QIcon>
-#include <QAction>
-#include <QDebug>
-//#include <QtGui/QAction>
+#include <QtGui/QAction>
+#include <QtGui/QAction>
 #include <QtGui/QCloseEvent>
 
-#include "icon.hpp"
-#include "dialog.hpp"
+#include "./icon"
+#include "./dialog"
 
 
 namespace dm::ui{

@@ -1,11 +1,12 @@
 #include <QApplication>
 
-#include "mini/app.hpp"
-#include "mini/map.hpp"
-#include "ui/mainwindow.hpp"
-#include "ui/translator.hpp"
-#include "ui/workspace.hpp"
-#include "ui/dialog.hpp"
+#include "mini/app"
+#include "mini/map"
+#include "ui/icon"
+#include "ui/mainwindow"
+#include "ui/translator"
+#include "ui/workspace"
+#include "ui/dialog"
 
 int main(int argc, char *argv[]) {
   // Qt.

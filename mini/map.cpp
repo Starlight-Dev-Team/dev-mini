@@ -1,7 +1,3 @@
-#ifndef MINI_MAP_CPP
-#define MINI_MAP_CPP
-
-
 #include "map.hpp"
 
 
@@ -14,6 +10,3 @@ MapId::MapId(QString localId) {
 
 
 }
-
-
-#endif
