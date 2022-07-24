@@ -1,11 +1,11 @@
-<h1 style="text-align: center;">Dev-Mini README</h1>
+<h1 align="center" style="text-align: center;">Dev-Mini README</h1>
 
-<p style="text-align: right;">—A tool to make miniworld map<br/>development more convenient.</p>
+<p align="right" style="text-align: right;">—A tool to make miniworld map<br/>development more convenient.</p>
 
-<div style="text-align: center">
-  <img alt="Lincense: LGPL 3" src="https://img.shields.io/badge/license-LGPL%203-red"/>
-  <img alt="Qt: 6.3.2" src="https://img.shields.io/badge/Qt-6.3.2-brightgreen"/>
-  <img alt="Qt: 6.3.2" src="https://img.shields.io/badge/C%2B%2B-17-brightgreen"/>
+<div align="center" style="text-align: center;">
+  <img alt="Licence: LGPL v3" src="https://img.shields.io/badge/licence-LGPL%20v3-red"/>
+  <img alt="Qt: 6.2.4" src="https://img.shields.io/badge/Qt-6.2.4-brightgreen"/>
+  <img alt="C++: 17" src="https://img.shields.io/badge/C%2B%2B-17-brightgreen"/>
   <br/>
   <img alt="By: Starlight Dev Team" src="https://img.shields.io/badge/by-Starlight%20Dev%20Team-blue"/>
 </div>
