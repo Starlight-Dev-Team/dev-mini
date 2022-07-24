@@ -25,7 +25,7 @@ MainWindow::MainWindow() {
   toolBarTopWidget->addAction(openMapActionWidget);
 }
 
-inline void MainWindow::show() {
+void MainWindow::show() {
   windowWidget->show();
 }
 

@@ -33,7 +33,7 @@ class MainWindow : public QObject {
   MainWindow();
   // void closeEvent(QCloseEvent *event);
  public slots:
-  inline void show();
+  void show();
  private:
   // UI Widgets.
   QMainWindow *windowWidget = new QMainWindow();
