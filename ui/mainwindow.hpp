@@ -1,5 +1,5 @@
-#ifndef UI_MAINWINDOW_HPP
-#define UI_MAINWINDOW_HPP
+#ifndef DM_UI_MAINWINDOW
+#define DM_UI_MAINWINDOW
 
 
 #include <QtCore/QString>
@@ -17,41 +17,38 @@
 #include <QtGui/QAction>
 #include <QtGui/QCloseEvent>
 
-#include "./icon"
-#include "./dialog"
+
+// #include "./icon"
+// #include "./dialog"
 
 
-namespace dm::ui{
+namespace dm::ui {
 
 
-class MainWindow : protected QMainWindow {
- Q_OBJECT
+class MainWindow : public QObject {
+  Q_OBJECT
  public:
   static QString windowTitle;
   static QSize windowSize;
   MainWindow();
-  ~MainWindow();
-  void closeEvent(QCloseEvent *event);
+  // void closeEvent(QCloseEvent *event);
  public slots:
   inline void show();
-  static void openMap();
-  static void newMap();
- protected:
-  // Widgets.
-  QMenuBar* menuBarWidget = this->menuBar();
-  QToolBar* toolBarTopWidget = new QToolBar(this);
-  QStatusBar* statusBarWidget = this->statusBar();
-  QMenu* fileMenuWidget = new QMenu(tr("File"), this->menuBarWidget);
-  QMenu* helpMenuWidget = new QMenu(tr("Help"), this->menuBarWidget);
-  QAction* openMapActionWidget = new QAction(Icon::openFolder, tr("Open Map"), this->fileMenuWidget);
-  QAction* newMapActionWidget = new QAction(Icon::plus, tr("New Map"), this->fileMenuWidget);
-  QAction* aboutDmActionWidget = new QAction(Icon::question, tr("Help"), this->helpMenuWidget);
  private:
-  QList<mini::App> appList;
+  // UI Widgets.
+  QMainWindow *windowWidget = new QMainWindow();
+  QMenuBar *menuBarWidget = windowWidget->menuBar();
+  QToolBar *toolBarTopWidget = new QToolBar(windowWidget);
+  QStatusBar *statusBarWidget = windowWidget->statusBar();
+  QMenu *fileMenuWidget = new QMenu(tr("File"), menuBarWidget);
+  QMenu *helpMenuWidget = new QMenu(tr("Help"), menuBarWidget);
+  QAction *openMapActionWidget = new QAction(/* Icon::openFolder, */ tr("Open Map"), fileMenuWidget);
+  QAction *newMapActionWidget = new QAction(/* Icon::plus, */ tr("New Map"), fileMenuWidget);
+  QAction *aboutDmActionWidget = new QAction(/* Icon::question, */ tr("Help"), helpMenuWidget);
 };
 
 
-}
+} // namespace dm::ui
 
 
-#endif // UI_MAINWINDOW_HPP
+#endif // macro DM_UI_MAINWINDOW

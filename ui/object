@@ -1,0 +1,8 @@
+#ifndef DM_UI_OBJECT
+
+
+#include "./object.hpp"
+#include "./object.cpp"
+
+
+#endif // macro DM_UI_OBJECT

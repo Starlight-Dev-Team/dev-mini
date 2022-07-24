@@ -8,22 +8,12 @@
 namespace dm::mini {
 
 
-class MapId {
- public:
-  MapId(QString localId = "");
-  inline QString getLocalId();
-  void setLocalId(QString localId);
- private:
-  QString localId;
-};
-
-
 class Map {
  public:
-  Map(MapId id);
-  ~Map();
+  Map(QString mapId, qint32 mapApiId);
  private:
-  MapId id;
+  QString id;
+  qint32 apiId;
 };
 
 

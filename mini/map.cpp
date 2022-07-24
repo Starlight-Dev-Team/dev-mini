@@ -4,8 +4,9 @@
 namespace dm::mini {
 
 
-MapId::MapId(QString localId) {
-  this->setLocalId(localId);
+Map::Map(QString mapId, qint32 mapApiId) {
+  id = mapId;
+  apiId = mapApiId;
 }
 
 

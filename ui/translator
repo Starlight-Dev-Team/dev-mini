@@ -1,6 +1,8 @@
-#include "./translator.hpp"
+#ifndef DM_UI_TRANSLATOR
 
-#ifndef UI_TRANSLATOR
-#define UI_TRANSLATOR
+
+#include "./translator.hpp"
 #include "./translator.cpp"
-#endif
+
+
+#endif // macro DM_UI_TRANSLATOR

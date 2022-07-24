@@ -1,6 +1,6 @@
-<h1 style="text-align: center;">Dev-Mini CONTRIBUTING</h1>
+<h1 align="center" style="text-align: center;">Dev-Mini CONTRIBUTING</h1>
 
-<p style="text-align: right;">—Opensource makes the world a better place.</p>
+<p align="right" style="text-align: right;">—Opensource makes the world a better place.</p>
 
 Welcome! Thanks for your interest in contributing to Dev-Mini.
 

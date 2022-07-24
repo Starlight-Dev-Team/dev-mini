@@ -1,6 +1,8 @@
-#include "./workspace.hpp"
+#ifndef DM_UI_WORKSPACE
 
-#ifndef UI_WORKSPACE
-#define UI_WORKSPACE
+
+#include "./workspace.hpp"
 #include "./workspace.cpp"
-#endif
+
+
+#endif // macro DM_UI_WORKSPACE

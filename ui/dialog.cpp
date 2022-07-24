@@ -8,7 +8,7 @@
 namespace dm::ui {
 
 
-SelectMapDialog::SelectMapDialog(const mini::App &defaultApp) {
+SelectMapDialog::SelectMapDialog(QWidget* parent) {
   this->setModal(true);
 }
 
@@ -17,7 +17,9 @@ inline void SelectMapDialog::show() {
 }
 
 
-askSaveFileDialog::askSaveFileDialog(QString content, StandardButtons buttons){
+askSaveFileDialog::askSaveFileDialog(QWidget* parent, QString content,
+                                     StandardButtons buttons) {
+  setParent(parent);
   this->setIcon(QMessageBox::Question);
   this->setWindowTitle(tr("Save Files"));
   this->setText(content);
@@ -25,8 +27,8 @@ askSaveFileDialog::askSaveFileDialog(QString content, StandardButtons buttons){
   this->setDefaultButton(QMessageBox::SaveAll);
 }
 
-void askSaveFileDialog::show() {
-  return this->open();
+int askSaveFileDialog::exec() {
+  return this->QMessageBox::exec();
 }
 
 

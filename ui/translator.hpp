@@ -1,5 +1,6 @@
-#ifndef UI_TRANSLATOR_HPP
-#define UI_TRANSLATOR_HPP
+#ifndef DM_UI_TRANSLATOR
+#define DM_UI_TRANSLATOR
+
 
 #include <QtCore/QDebug>
 #include <QtCore/QString>
@@ -12,11 +13,11 @@ namespace dm::ui{
 
 class Translator : protected QTranslator {
  public:
-  Translator(QApplication &qtApp);
+  Translator(const QApplication &qtApp);
 };
 
 
-}
+} // namespace dm::ui
 
 
-#endif // UI_TRANSLATOR_HPP
+#endif // macro DM_UI_TRANSLATOR

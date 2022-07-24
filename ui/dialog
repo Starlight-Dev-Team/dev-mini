@@ -1,4 +1,3 @@
-#include "ui/dialog.hpp"
 
 #ifndef UI_DIALOG
 #define UI_DIALOG

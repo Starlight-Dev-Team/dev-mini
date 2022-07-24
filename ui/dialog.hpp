@@ -17,7 +17,7 @@ namespace dm::ui {
 class SelectMapDialog : protected QDialog {
  Q_OBJECT
  public:
-  SelectMapDialog(const mini::App &defaultApp = mini::App());
+  SelectMapDialog(QWidget* parent = nullptr);
  public slots:
   inline void show();
  protected:
@@ -28,12 +28,14 @@ class SelectMapDialog : protected QDialog {
 
 
 class askSaveFileDialog : protected QMessageBox {
+ Q_OBJECT
  public:
-  askSaveFileDialog(QString content = tr("Save changes?"),
+  askSaveFileDialog(QWidget* parent = nullptr,
+                    QString content = tr("Save changes?"),
                     StandardButtons buttons = StandardButtons(
                         QMessageBox::SaveAll | QMessageBox::Discard
                                              | QMessageBox::Cancel));
-  void show();
+  int exec();
 };
 
 
