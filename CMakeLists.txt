@@ -16,9 +16,9 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Gui)
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Gui)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
@@ -38,19 +38,23 @@ set(PROJECT_SOURCES
     ui/translator.cpp
     ui/workspace.hpp
     ui/workspace.cpp
-    # ui/icon.hpp
-    # ui/icon.cpp
+    ui/icon.hpp
+    ui/icon.cpp
     # ui/Icon
     # ui/dialog.hpp
     # ui/dialog.cpp
     # ui/Dialog
     main.cpp
 )
+set(PROJECT_RESOURCES
+    resource/icon.qrc
+)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(dev-mini
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        ${PROJECT_RESOURCES}
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET dev-mini APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -60,12 +64,14 @@ else()
     if(ANDROID)
         add_library(dev-mini SHARED
             ${PROJECT_SOURCES}
+            ${PROJECT_RESOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(dev-mini
             ${PROJECT_SOURCES}
+            ${PROJECT_RESOURCES}
         )
     endif()
 endif()

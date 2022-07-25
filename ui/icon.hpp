@@ -1,5 +1,5 @@
-#ifndef UI_ICON_HPP
-#define UI_ICON_HPP
+#ifndef DM_UI_ICON
+#define DM_UI_ICON
 
 
 #include <QtGui/QIcon>
@@ -8,7 +8,7 @@
 namespace dm::ui {
 
 
-class Icon : protected QIcon {
+class Icon {
  public:
   static QIcon openFolder;
   static QIcon plus;
@@ -16,7 +16,7 @@ class Icon : protected QIcon {
 };
 
 
-}
+} // namespace dm::ui
 
 
-#endif
+#endif // macro DM_UI_ICON

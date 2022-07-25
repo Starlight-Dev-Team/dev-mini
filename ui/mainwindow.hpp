@@ -19,6 +19,7 @@
 
 
 #include "./object.hpp"
+#include "./icon.hpp"
 
 
 namespace dm::ui {
@@ -41,9 +42,9 @@ class MainWindow : public Object {
   QStatusBar *statusBarWidget = windowWidget->statusBar();
   QMenu *fileMenuWidget = new QMenu(tr("File"), menuBarWidget);
   QMenu *helpMenuWidget = new QMenu(tr("Help"), menuBarWidget);
-  QAction *openMapActionWidget = new QAction(/* Icon::openFolder, */ tr("Open Map"), fileMenuWidget);
-  QAction *newMapActionWidget = new QAction(/* Icon::plus, */ tr("New Map"), fileMenuWidget);
-  QAction *aboutDmActionWidget = new QAction(/* Icon::question, */ tr("Help"), helpMenuWidget);
+  QAction *openMapActionWidget = new QAction(Icon::openFolder, tr("Open Map"), fileMenuWidget);
+  QAction *newMapActionWidget = new QAction(Icon::plus, tr("New Map"), fileMenuWidget);
+  QAction *aboutDmActionWidget = new QAction(Icon::question, tr("Help"), helpMenuWidget);
 };
 
 
