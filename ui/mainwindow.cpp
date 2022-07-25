@@ -7,7 +7,8 @@ namespace dm::ui {
 QString MainWindow::windowTitle = tr("Dev-Mini");
 QSize MainWindow::windowSize = QSize(1060, 630);
 
-MainWindow::MainWindow() {
+MainWindow::MainWindow(QObject *parent) {
+  setParent(parent);
   // window attributes
   windowWidget->setWindowTitle(MainWindow::windowTitle);
   windowWidget->resize(MainWindow::windowSize);
@@ -20,9 +21,9 @@ MainWindow::MainWindow() {
   fileMenuWidget->addAction(openMapActionWidget);
   fileMenuWidget->addAction(newMapActionWidget);
   helpMenuWidget->addAction(aboutDmActionWidget);
-  // actions of the toolbar
-  windowWidget->addToolBar(Qt::TopToolBarArea, toolBarTopWidget);
-  toolBarTopWidget->addAction(openMapActionWidget);
+}
+MainWindow::~MainWindow() {
+  delete windowWidget;
 }
 
 void MainWindow::show() {

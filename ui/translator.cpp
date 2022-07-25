@@ -4,9 +4,9 @@
 namespace dm::ui {
 
 
-Translator::Translator(const QApplication& qtApp) {
-  qDebug() << this->load("i18n/zh-CN.qm");
-  qtApp.installTranslator(this);
+Translator::Translator(QApplication *parent) {
+  // translator->load("i18n/");
+  parent->installTranslator(translator);
 }
 
 

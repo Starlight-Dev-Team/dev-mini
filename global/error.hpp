@@ -10,12 +10,22 @@ namespace dm {
 
 class Error {
  public:
-  Error(QString errorMessage);
+  enum ErrorLevel{
+    DEBUG = 0x0001,
+    INFO = 0x0002,
+    WARN = 0x0004,
+    ERROR = 0x0008,
+    FATAL = 0x0010
+  };
+  Error();
+  Error(ErrorLevel newLevel, QString &newMessage);
   virtual ~Error();
-  int getLevel() const;
-  QString getMessage() const;
+  ErrorLevel getLevel() const;
+  void setLevel(ErrorLevel newLevel);
+  QString getMessage() const throw();
+  void setMessage(const QString &newMessage);
  private:
-  int level;
+  ErrorLevel level;
   QString message;
 };
 

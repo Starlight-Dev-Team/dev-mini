@@ -8,7 +8,23 @@
 #include <QtWidgets/QMdiSubWindow>
 
 
+#include "../global/error.hpp"
+
+
 namespace dm::ui {
+
+
+class WorkspaceError : public Error {
+ public:
+  enum ErrorType {
+    UNKNOWN = 0x0000,
+    ALREADY_EXISTS = 0X0001,
+    TOO_MANY = 0X0002,
+    BAD_TYPE = 0x0004
+  };
+  WorkspaceError(ErrorType newType);
+  ~WorkspaceError();
+};
 
 
 class WorkspaceDoc : public QObject {
@@ -16,7 +32,8 @@ class WorkspaceDoc : public QObject {
  public:
   enum DOC_TYPE {
     BLANK = 0x0000,
-    MAP = 0x0001
+    WEB_VIEW = 0x0001,
+    MAP = 0x0002
   };
   DOC_TYPE getDocType() const;
  private:

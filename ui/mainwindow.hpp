@@ -18,27 +18,26 @@
 #include <QtGui/QCloseEvent>
 
 
-// #include "./icon"
-// #include "./dialog"
+#include "./object.hpp"
 
 
 namespace dm::ui {
 
 
-class MainWindow : public QObject {
+class MainWindow : public Object {
   Q_OBJECT
  public:
   static QString windowTitle;
   static QSize windowSize;
-  MainWindow();
+  MainWindow(QObject *parent = nullptr);
+  ~MainWindow();
   // void closeEvent(QCloseEvent *event);
  public slots:
   void show();
  private:
-  // UI Widgets.
+  // UI Widgets
   QMainWindow *windowWidget = new QMainWindow();
   QMenuBar *menuBarWidget = windowWidget->menuBar();
-  QToolBar *toolBarTopWidget = new QToolBar(windowWidget);
   QStatusBar *statusBarWidget = windowWidget->statusBar();
   QMenu *fileMenuWidget = new QMenu(tr("File"), menuBarWidget);
   QMenu *helpMenuWidget = new QMenu(tr("Help"), menuBarWidget);

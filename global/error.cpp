@@ -4,14 +4,25 @@
 namespace dm {
 
 
-Error::Error(QString errorMessage) {}
+Error::Error() {}
+Error::Error(ErrorLevel newLevel, QString &newMessage) {
+  setLevel(newLevel);
+  setMessage(newMessage);
+}
 Error::~Error() {}
 
-int Error::getLevel() const {
+Error::ErrorLevel Error::getLevel() const {
   return level;
 }
-QString Error::getMessage() const {
+void Error::setLevel(ErrorLevel newLevel) {
+  level = newLevel;
+}
+
+QString Error::getMessage() const throw() {
   return message;
+}
+void Error::setMessage(const QString &newMessage) {
+  message = newMessage;
 }
 
 

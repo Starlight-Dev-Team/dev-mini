@@ -8,12 +8,17 @@
 #include <QtWidgets/QApplication>
 
 
+#include "object.hpp"
+
+
 namespace dm::ui{
 
 
-class Translator : protected QTranslator {
+class Translator : public Object {
  public:
-  Translator(const QApplication &qtApp);
+  Translator(QApplication *parent);
+ private:
+  QTranslator* translator = new QTranslator(this);
 };
 
 
